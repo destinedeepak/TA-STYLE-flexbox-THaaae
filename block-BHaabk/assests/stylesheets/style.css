@@ -1,0 +1,145 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* custom style  */
+*{
+    box-sizing: border-box;
+}
+.clearfix::before, .clearfix::after{
+    content: "";
+    display: table;
+}
+.clearfix::after{
+    clear:both;
+}
+body{
+    font-family: sans-serif;
+}
+.flex{
+	display:flex;
+}
+
+/* header */
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 0;
+}
+header{
+    background-color: blueviolet;
+    width: 100%;
+    height: 60px;
+}
+
+ .nav{
+     float: right;
+     padding-top: 15px;
+ }
+ .brand{
+    float: left;
+}
+
+ .nav a{
+     font-size: 20px;
+     text-decoration: none;
+     margin-left: 10px;
+     color: white;
+ }
+
+ /* main  */
+ 
+ .article{
+	 width: 50%;
+ }
+ .article-intro h1{
+	 font-size: 42px;
+	 color: black;
+	 margin-top: 80px;
+	 margin-bottom: 100px;
+ }
+ .article-intro p{
+	 font-size: 15px;
+	 color: rgb(160, 143, 143);
+	 line-height: 1.5;
+ }
+  
+ .article-image img{
+	 width: 100%;
+ }
+
+ /* section-gallery  */
+ .gallery{
+	 flex-wrap: wrap;
+ }
+ .box{
+	 width: 33.33%;
+	 height: 200px;
+ }
+ .box img{
+	 width: 100%;
+	 height: 100%;
+ }
+ /* footer  */
+ footer{
+    width: 100%;
+    background-color: blueviolet ;
+    height: 60px;
+
+}
+.connect{
+    font-size: 22px;
+    display: inline-block;
+    padding-top: 15px;
+    padding-left: 30px;
+ }
+ .connect a{
+    text-decoration: none;
+    margin-left: 10px;
+    color: white;
+ }
