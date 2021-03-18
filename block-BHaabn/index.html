@@ -1,8 +1,69 @@
-<!-- 
-- Create a gallery using flexbox according to the layout shown below.
-
-![Flex Shrink Property](https://raw.githubusercontent.com/suraj122/AC-STYLE-images/master/flexbox/ex-1.png)
-
-- Using CSS resets is necessary.
-- Use semantic tags and keep the nesting and indentation proper.
--->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assests/stylesheets/style.css">
+    <script src="https://kit.fontawesome.com/d95544a3bc.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header >
+        <div class="container clearfix">
+            <a href="#" class="brand">
+                <img src="./assests/media/altcampus-logo.svg" alt="Brand-Name">
+            </a>
+            <nav class="nav">
+                <a href="#">HOME</a>
+                <a href="#" class="green">GALLERY</a>
+                <a href="#">ABOUT</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <header class="hero-header">
+                    <h1>GALLERY</h1>
+                </header>
+            </div>
+        </section>
+        <section class="gallery">
+            <div class="container">
+                <div class="images">
+                    <div class="image">
+                        <img src="./assests/media/bulb-in-hand.png" alt="nature">
+                    </div>
+                    <div class="image">
+                        <img src="./assests/media/image-3.jpg" alt="nature">
+                    </div>
+                    <div class="image">
+                        <img src="./assests/media/image-6.jpg" alt="nature">
+                    </div>
+                    <div class="image">
+                        <img src="./assests/media/image2.jpg" alt="nature">
+                    </div>
+                    <div class="image">
+                        <img src="./assests/media/image4.jpg" alt="nature">
+                    </div>
+                    <div class="image">
+                        <img src="./assests/media/image5.jpg" alt="nature">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container footer" clearfix>
+                <div class="aside">
+                    <h3><span>&copy</span>AltCampus</h3>
+                </div>
+                <div class="connect">
+                    <a href="#"><i class="fab fa-facebook-square"></i></a>
+                    <a href="#"><i class="fab fa-twitter-square"></i></a>
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>
