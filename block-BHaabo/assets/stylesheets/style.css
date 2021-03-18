@@ -1,0 +1,220 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* custom style  */
+*{
+    box-sizing: border-box;
+}
+.clearfix::before, .clearfix::after{
+    content: "";
+    display: table;
+}
+.clearfix::after{
+    clear:both;
+}
+body{
+    font-family: sans-serif;
+}
+.container{
+    max-width: 1260px;
+    margin: 0 auto;
+    padding: 0 32px;
+    font-size: 0;
+
+}
+/* header */
+
+header{
+    background-color: #222946;
+    padding: 16px 0 ;
+    
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.brand img{
+  width: 100px;
+}
+ .nav a{
+     
+     font-size: 16px;
+     text-decoration: none;
+     margin-left: 15px;
+     color: white;
+ }
+ a.name-text{
+    margin-left: 35px;
+ }
+ /* main  */
+ 
+
+ /* dashboard */
+ .original{
+     margin-top: 40px;
+ }
+ .dashboard{
+     background-color: #A3CAEA;
+     width: 30%;
+     border-radius: 12px;
+ }
+ .dashboard-container{
+     width: 85%;
+     margin: 0 auto;
+ }
+ .dashboard .orange-border{
+     border: 3px solid #FF7B29;
+     padding: 12px;
+     border-radius: 10px;
+     color: #FF7B29;
+ }
+ .font-color{
+    color: #FF7B29;
+}
+.dashboard .white-border{
+     border: 1px solid transparent;
+     padding: 12px;
+     border-radius: 10px;
+     background-color: white;
+     margin-top: 300px;
+     margin-bottom:20px;
+ }
+ 
+ .titles{
+    margin-top: 35px;
+     display: flex;
+    justify-content:ce;
+    align-items:center;
+ }
+ .titles img{
+    display: inline-block;
+    /* padded invidual */
+    padding-left: 35px;
+    margin-right:15px ;
+}
+.dashboard .white-border img, .dashboard .orange-border img{
+      padding-left:20px;
+}  
+ .titles p{
+    font-size: 18px;
+    text-transform: capitalize;
+    display: inline-block;
+    color: #222946;
+    font-weight:bold ;
+
+}
+/* article  */
+ .article{
+     background-color: #F2F8FD;
+     border-radius: 10px;
+     width: 68%;
+ }
+ .article-container{
+     padding: 15px;
+ }
+ .article h1{
+     font-size: 42px;
+     color:#222946;
+     margin-top: 24px;
+     margin-bottom: 17px;
+     font-weight: bold;
+ }
+ .article p{
+    color:#222946;
+     font-size: 15px;
+     margin-bottom: 7px;
+
+     
+ }
+ .article button{
+    margin-top: 15px;
+    height: 45px;
+    width: 150px;
+    background-color: #37B667;
+    border-radius: 6px;
+    border: none;
+ }
+ .article button a{
+     color: white;
+     text-decoration: none;
+     font-size: 15px;
+ }
+ /* footer  */
+ footer{
+    background-color:#222946;
+    margin-top: 25px;
+}
+.footer{
+    height: 110px;
+    background-color:#222946;
+}
+.aside{
+  color: rgb(173, 173, 173);
+  padding-top: 40px;;
+}
+.aside span{
+    font-size: 18px;
+    margin-right: 5px;
+}
+.aside h3{
+    font-size: 18px;
+}
+.connect{
+    color: rgb(173, 173, 173);
+    float: right;
+    position: relative;
+    bottom: 25px;
+}   
+
+.connect a{
+    font-size: 25px;
+    color: rgb(173, 173, 173);
+    margin: 15px;
+}
